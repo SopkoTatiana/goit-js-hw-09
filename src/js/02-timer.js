@@ -41,6 +41,7 @@ function onStartBtnClick() {
       clearInterval(timer);
       return;
     }
+    refs.startBtn.setAttribute('disabled', '');
     const time = convertMs(deltaDate);
     updateTimer(time);
   }, 1000);
